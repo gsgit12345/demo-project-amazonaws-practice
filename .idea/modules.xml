@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo-project-amazon-s3-services/demo-project-amazon-s3-services.iml" filepath="$PROJECT_DIR$/demo-project-amazon-s3-services/demo-project-amazon-s3-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-project-amazonaws-practice.iml" filepath="$PROJECT_DIR$/demo-project-amazonaws-practice.iml" />
+    </modules>
+  </component>
+</project>
