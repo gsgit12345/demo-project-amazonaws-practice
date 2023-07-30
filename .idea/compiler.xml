@@ -10,14 +10,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="demo-project-amazon-s3-services" target="1.7" />
-      <module name="demo-project-amazonaws-practice" target="17" />
+      <module name="demo-project-amazon-s3-services" target="1.8" />
+      <module name="demo-project-amazonaws-practice" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo-project-amazon-s3-services" options="" />
-      <module name="demo-project-amazonaws-practice" options="-parameters" />
+      <module name="demo-project-amazon-s3-services" options="-parameters" />
+      <module name="demo-project-amazonaws-practice" options="" />
     </option>
   </component>
 </project>
