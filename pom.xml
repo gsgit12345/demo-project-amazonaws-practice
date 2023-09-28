@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>demo-project-amazon-s3-services</module>
+        <module>demo-project-aws-rds-connectivity</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
