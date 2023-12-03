@@ -1,0 +1,18 @@
+
+#below is the command to setup the repository on aws.there is two way using the cli and using the HTTP ECR Api authentication
+aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/a3g3i4x6/ghan-demo
+ docker build -t ghan-demo .
+
+docker tag ghan-demo:latest public.ecr.aws/a3g3i4x6/ghan-demo:latest
+
+docker push public.ecr.aws/a3g3i4x6/ghan-demo:latest
+
+docker container run --name producer -p 8080:8080 -d ghan-demo       ---testing image locally
+docker container logs producer
+
+
+#Using the HTTP ECR Api Authentication.in the process first get the token and login.In case of public repository always use region us-east-1
+TOKEN=$(aws ecr-public get-authorization-token --region us-east-1 --output=text --query 'authorizationData.authorizationToken')
+
+curl -i -H "Authorization: Bearer $TOKEN" https://public.ecr.aws/v2/registry_alias/repository_name/manifests/image_tag
+
